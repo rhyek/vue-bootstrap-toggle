@@ -1,0 +1,28 @@
+{
+  "name": "vue-bootstrap-toggle",
+  "version": "1.0.0",
+  "description": "A VueJS wrapper for Bootstrap Toggle.",
+  "main": "BootstrapToggle.vue",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rhyek/vue-bootstrap-toggle.git"
+  },
+  "keywords": [
+    "vuejs",
+    "vue",
+    "bootstrap",
+    "toggle"
+  ],
+  "author": "https://github.com/rhyek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rhyek/vue-bootstrap-toggle/issues"
+  },
+  "homepage": "https://github.com/rhyek/vue-bootstrap-toggle#readme",
+  "dependencies": {
+    "bootstrap-toggle": "^2.2.2"
+  }
+}
