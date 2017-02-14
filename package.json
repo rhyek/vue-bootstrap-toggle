@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "webpack -p",
-    "dev": "webpack --watch",
+    "dev": "webpack -w",
     "prepublish": "npm run build"
   },
   "repository": {
