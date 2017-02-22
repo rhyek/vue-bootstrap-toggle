@@ -20,13 +20,18 @@
         return jQuery(this.$el)
       }
     },
+    watch: {
+      value(newValue) {
+        this.$$el.bootstrapToggle(newValue ? 'on' : 'off')
+      }
+    },
     mounted() {
       if (this.value) {
         this.$el.checked = true
       }
       this.$$el.bootstrapToggle(this.options)
       this.$$el.change(() => {
-        this.$emit('input', !this.value)
+        this.$emit('input', this.$$el.prop('checked'))
       })
     },
     beforeDestroy() {
