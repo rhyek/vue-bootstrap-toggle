@@ -1,6 +1,6 @@
 {
   "name": "vue-bootstrap-toggle",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A VueJS wrapper for Bootstrap Toggle.",
   "main": "dist/index.js",
   "scripts": {
@@ -31,6 +31,7 @@
     "babel-core": "^6.23.1",
     "babel-loader": "^6.2.10",
     "babel-preset-env": "^1.1.8",
+    "css-loader": "^0.26.1",
     "vue-loader": "^11.0.0",
     "vue-template-compiler": "^2.1.10",
     "webpack": "^2.2.1"

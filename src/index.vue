@@ -35,3 +35,5 @@
     }
   }
 </script>
+
+<style src="bootstrap-toggle/css/bootstrap-toggle.css"/>
