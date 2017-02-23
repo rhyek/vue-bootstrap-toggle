@@ -28,7 +28,7 @@ export default {
     }
   }
 }
-</script>'
+</script>
 ```
 
 ## Troubleshooting
