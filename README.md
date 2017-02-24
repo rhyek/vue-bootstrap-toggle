@@ -2,6 +2,11 @@
 
 A VueJS wrapper for [Bootstrap Toggle](https://github.com/minhur/bootstrap-toggle).
 
+## Prerequisites
+
+* `jquery`
+* `bootstrap` 3
+
 ## Installation
 
 `npm install --save vue-bootstrap-toggle`
@@ -35,6 +40,4 @@ export default {
 
 If the switches render correctly,
 but do not toggle when you click,
-make sure no bootstrap-toggle.js is loaded in the html,
-but only through the webpack/etc compiler.
-(since else it will instantly toggle 2 times, resulting in no visual change)
+make sure `bootstrap-toggle.js` isn't loaded somewhere in your HTML.
