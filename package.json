@@ -1,6 +1,6 @@
 {
   "name": "vue-bootstrap-toggle",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "A VueJS wrapper for Bootstrap Toggle.",
   "main": "dist/index.js",
   "scripts": {
@@ -25,7 +25,8 @@
   },
   "homepage": "https://github.com/rhyek/vue-bootstrap-toggle#readme",
   "dependencies": {
-    "bootstrap-toggle": "^2.2.2"
+    "bootstrap-toggle": "^2.2.2",
+    "merge": "^1.2.0"
   },
   "devDependencies": {
     "babel-core": "^6.23.1",
