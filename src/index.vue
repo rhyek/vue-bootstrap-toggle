@@ -5,13 +5,14 @@
 <script>
 import merge from 'merge'
 
-export const defaults = {}
-
 if (!jQuery().bootstrapToggle) {
   require('bootstrap-toggle')
 }
 
+const defaults = {}
+
 export default {
+  defaults,
   props: {
     value: Boolean,
     options: {
