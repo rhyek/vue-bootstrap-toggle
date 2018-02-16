@@ -20,6 +20,9 @@ export default {
       default: () => ({})
     }
   },
+  data() {
+    return { updating: false, };
+  },
   computed: {
     $$el() {
       return jQuery(this.$el)
@@ -27,7 +30,11 @@ export default {
   },
   watch: {
     value(newValue) {
-      this.$$el.bootstrapToggle(newValue ? 'on' : 'off')
+      if(this.updating) {
+        return;
+    }
+
+      this.$$el.bootstrapToggle(newValue ? 'on' : 'off');
     }
   },
   mounted() {
@@ -36,7 +43,9 @@ export default {
     }
     this.$$el.bootstrapToggle(merge.recursive(true, defaults, this.options))
     this.$$el.change(() => {
-      this.$emit('input', this.$$el.prop('checked'))
+      this.updating = true;
+	  this.$emit('input', this.$$el.prop('checked'));
+	  this.$nextTick( () => this.updating = false );
     })
   },
   beforeDestroy() {
