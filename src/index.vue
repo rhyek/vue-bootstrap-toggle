@@ -18,7 +18,11 @@ export default {
     options: {
       type: Object,
       default: () => ({})
-    }
+    },
+    disabled: {
+      type: Boolean,
+      default: false,
+    },
   },
   data() {
     return { updating: false, };
@@ -32,9 +36,12 @@ export default {
     value(newValue) {
       if(this.updating) {
         return;
-    }
+      }
 
       this.$$el.bootstrapToggle(newValue ? 'on' : 'off');
+    },
+    disabled(newValue) {
+      this.$$el.bootstrapToggle(newValue ? 'disable' : 'enable');
     }
   },
   mounted() {
