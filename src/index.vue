@@ -49,10 +49,11 @@ export default {
       this.$el.checked = true
     }
     this.$$el.bootstrapToggle(merge.recursive(true, defaults, this.options))
+    if (this.disabled) { this.$$el.bootstrapToggle('disable') }
     this.$$el.change(() => {
       this.updating = true;
-	  this.$emit('input', this.$$el.prop('checked'));
-	  this.$nextTick( () => this.updating = false );
+      this.$emit('input', this.$$el.prop('checked'));
+      this.$nextTick( () => this.updating = false );
     })
   },
   beforeDestroy() {

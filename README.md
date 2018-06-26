@@ -17,7 +17,7 @@ A VueJS wrapper for [Bootstrap Toggle](https://github.com/minhur/bootstrap-toggl
 <template>
   <div>
     <label>
-      <bootstrap-toggle v-model="checked" :options="{ on: 'Yes', off: 'No' }"/>
+      <bootstrap-toggle v-model="checked" :options="{ on: 'Yes', off: 'No' }" :disabled="false" />
     </label>
   </div>
 </template>
